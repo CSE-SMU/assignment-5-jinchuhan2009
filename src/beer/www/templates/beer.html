@@ -1,0 +1,32 @@
+<style>
+ .pic{
+    text-align: center;
+}
+</style>
+<ion-view view-title="{{Beer.name}}">
+  <ion-content>
+    <div class="pic"><img src="{{Beer.labels.large}}" alt="{{Beer.name}} views"></div>
+    </div>
+    <div class="list list-inset">
+
+    <div class="item">
+      Name:{{Beer.name}}
+    </div>
+    <div class="item">
+     Year:{{Beer.year}}
+    </div>
+    <div class="item">
+     Organic:{{Beer.isOrganic}}
+    </div>
+    <div class="item">
+     Abv:{{Beer.abv}}
+    </div>
+    <div class="item">
+     ID:{{Beer.id}}
+    </div>
+  </div> 
+   <button class="button button-full button-energized" ng-click="Back()">
+    Return to Search
+    </button>  
+    </ion-content>
+  </ion-view>

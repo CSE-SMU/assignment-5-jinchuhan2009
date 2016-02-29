@@ -1,0 +1,13 @@
+<ion-view view-title="Beers">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="b in Beerlist" href="#/app/beers/{{b.id}}">
+      <img src="{{b.labels.icon}}">
+        {{b.name}}
+      </ion-item>
+    </ion-list>
+    <button class="button button-full button-energized" ng-click="Back()">
+    Return to Search
+    </button> 
+ </ion-content>
+</ion-view>
